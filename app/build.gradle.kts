@@ -2,7 +2,6 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
 }
-
 android {
     namespace = "com.example.kriiyetahackathon"
     compileSdk = 34
@@ -16,7 +15,9 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    buildFeatures{
+        viewBinding=true
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
