@@ -39,7 +39,8 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="14dp">
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/namesignup"
+                android:background="@color/white"
+                android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipToOutline="true"
@@ -50,23 +51,6 @@
                 app:hintTextColor="#FF5733" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginTop="14dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/usernamesignup"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:clipToOutline="true"
-                android:ems="10"
-                android:hint="UserName"
-                android:textColor="@color/black"
-                android:textCursorDrawable="@color/black"
-                app:hintTextColor="#FF5733" />
-        </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -75,8 +59,10 @@
             android:layout_marginTop="14dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/emailsignup"
+                android:id="@+id/email"
                 android:layout_width="match_parent"
+                android:background="@color/white"
+
                 android:layout_height="match_parent"
                 android:clipToOutline="true"
                 android:ems="10"
@@ -93,7 +79,7 @@
             android:layout_marginTop="14dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/passwordsignup"
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipToOutline="true"
@@ -101,6 +87,7 @@
                 android:hint="password"
                 android:textColor="@color/black"
                 android:textCursorDrawable="@color/black"
+                android:background="@color/white"
                 app:hintTextColor="#FF5733" />
         </com.google.android.material.textfield.TextInputLayout>
 

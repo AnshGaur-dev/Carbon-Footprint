@@ -6,10 +6,16 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.widget.ProgressBar
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.bharatyatrisathi.utils.USER_EMISSION
+import com.example.bharatyatrisathi.utils.USER_NODE
 import com.example.kriiyetahackathon.R
 import com.example.kriiyetahackathon.recyclerview.RecycleViewAdapter
 import com.example.kriiyetahackathon.recyclerview.RecyclerViewArraylist
 import com.example.kriiyetahackathon.databinding.ActivityHomeBinding
+import com.example.kriiyetahackathon.model.EmissionData
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.firestore.ktx.toObject
+import com.google.firebase.ktx.Firebase
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding : ActivityHomeBinding
@@ -36,14 +42,17 @@ class HomeActivity : AppCompatActivity() {
 //        }
 //        countDownTimer.start()
 
+
+
+
         binding.navigationDrawer.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.cf -> {
-                    startActivity(Intent(this, GoalActivity::class.java))
+                    startActivity(Intent(this, CFActivity::class.java))
                     finish()
                     return@setOnNavigationItemSelectedListener true
                 }
-                R.id.profile -> {
+                R.id.goal -> {
                     startActivity(Intent(this, GoalActivity::class.java))
                     finish()
                     return@setOnNavigationItemSelectedListener true
@@ -54,11 +63,24 @@ class HomeActivity : AppCompatActivity() {
             }
             false // Return false if none of the conditions match
         }
+
+//        Firebase.firestore.collection(USER_EMISSION).get().addOnSuccessListener { querySnapshot ->
+//            val userList = mutableListOf<EmissionData>()
+//            for (document in querySnapshot.documents) {
+//                val user = document.toObject<EmissionData>()
+//                if (user != null) {
+//                    userList.add(user)
+//                }
+//            }
+//            // Initialize RecyclerView and set adapter
+//            val adapter = RecycleViewAdapter(userList)
+//            binding.recycleView.adapter = adapter
+//        }
         val arrContact = ArrayList<RecyclerViewArraylist>()
         arrContact.add(RecyclerViewArraylist(R.drawable.plant, "mic", "1234567891"))
 
         adapter = RecycleViewAdapter(this, arrContact)
         binding.recycleView.layoutManager = LinearLayoutManager(this)
-        binding.recycleView.adapter = adapter
+
     }
 }

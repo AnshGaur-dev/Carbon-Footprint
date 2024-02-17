@@ -20,12 +20,12 @@ class CFActivity : AppCompatActivity() {
                     finish()
                     return@setOnNavigationItemSelectedListener true
                 }
-                R.id.profile -> {
+                R.id.goal -> {
                     startActivity(Intent(this, GoalActivity::class.java))
                     finish()
                     return@setOnNavigationItemSelectedListener true
                 }
-                R.id.home -> {
+                R.id.cf -> {
                     return@setOnNavigationItemSelectedListener true
                 }
             }

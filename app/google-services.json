@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "955971745770",
+    "project_id": "cocult-bf2cb",
+    "storage_bucket": "cocult-bf2cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955971745770:android:c35a4c2adda183b2d3e493",
+        "android_client_info": {
+          "package_name": "com.example.kriiyetahackathon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3jiR4QK5kBM0nsB5NMhHkulFP3rtHyLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
