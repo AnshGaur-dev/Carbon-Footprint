@@ -7,7 +7,7 @@
         android:icon="@drawable/plant"
         />
     <item
-        android:id="@+id/explore"
+        android:id="@+id/cf"
         android:title=""
         android:icon="@drawable/footprintnavbutton"
         />

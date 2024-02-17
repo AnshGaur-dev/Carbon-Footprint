@@ -3,11 +3,8 @@ package com.example.kriiyetahackathon.appactivies
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-<<<<<<< HEAD
 import android.os.CountDownTimer
 import android.widget.ProgressBar
-=======
->>>>>>> 42442b2b43f9c2036e7c0d4961f6b6d6c3a97ff9
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.kriiyetahackathon.R
 import com.example.kriiyetahackathon.recyclerview.RecycleViewAdapter
@@ -22,7 +19,7 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         supportActionBar?.hide()
-<<<<<<< HEAD
+
         var Currentprogress=0
 //        var countDownTimer=object : CountDownTimer(11*1000, 1000) {
 //
@@ -39,14 +36,10 @@ class HomeActivity : AppCompatActivity() {
 //        }
 //        countDownTimer.start()
 
-            binding.navigationDrawer.setOnNavigationItemSelectedListener { item ->
-=======
-
         binding.navigationDrawer.setOnNavigationItemSelectedListener { item ->
->>>>>>> 42442b2b43f9c2036e7c0d4961f6b6d6c3a97ff9
             when (item.itemId) {
-                R.id.explore -> {
-                    startActivity(Intent(this, CFActivity::class.java))
+                R.id.cf -> {
+                    startActivity(Intent(this, GoalActivity::class.java))
                     finish()
                     return@setOnNavigationItemSelectedListener true
                 }
@@ -58,9 +51,8 @@ class HomeActivity : AppCompatActivity() {
                 R.id.home -> {
                     return@setOnNavigationItemSelectedListener true
                 }
-
             }
-            false
+            false // Return false if none of the conditions match
         }
         val arrContact = ArrayList<RecyclerViewArraylist>()
         arrContact.add(RecyclerViewArraylist(R.drawable.plant, "mic", "1234567891"))
@@ -68,12 +60,5 @@ class HomeActivity : AppCompatActivity() {
         adapter = RecycleViewAdapter(this, arrContact)
         binding.recycleView.layoutManager = LinearLayoutManager(this)
         binding.recycleView.adapter = adapter
-
-
-
-
-
-
-
     }
 }

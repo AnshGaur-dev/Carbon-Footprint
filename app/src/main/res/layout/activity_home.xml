@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="8dp"
-    android:background="@drawable/homebackground"
-    >
+    android:background="@drawable/homebackground">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/navigationDrawer"
@@ -55,22 +54,11 @@
                     android:layout_alignParentLeft="true"
                     android:src="@drawable/homelefttree"
                     />
-
-<<<<<<< HEAD
-<!--                <ProgressBar-->
-<!--                    android:id="@+id/progressBar"-->
-<!--                    style="?android:attr/progressBarStyle"-->
-<!--                    android:layout_width="200dp"-->
-<!--                    android:layout_height="200dp"-->
-<!--                    android:layout_centerInParent="true"-->
-<!--                    android:progress="@drawable/circleprogressbar" />-->
-=======
                 <ProgressBar
                     android:id="@+id/progressBar"
                     style="?android:attr/progressBarStyle"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_centerInParent="true" />
->>>>>>> 42442b2b43f9c2036e7c0d4961f6b6d6c3a97ff9
         </RelativeLayout>
 </RelativeLayout>
