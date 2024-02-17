@@ -1,38 +1,36 @@
-package com.example.kriiyetahackathon
+package com.example.kriiyetahackathon.appactivies
 
-import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.kriiyetahackathon.databinding.ActivityHomeBinding
+import com.example.kriiyetahackathon.R
+import com.example.kriiyetahackathon.databinding.ActivityGoalBinding
 
-class HomeActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityHomeBinding
+class GoalActivity : AppCompatActivity() {
+    private lateinit var binding : ActivityGoalBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding = ActivityHomeBinding.inflate(layoutInflater)
+        binding = ActivityGoalBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        supportActionBar?.hide()
         binding.navigationDrawer.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.explore -> {
-                    startActivity(Intent(this, ExploreActivity::class.java))
+                    startActivity(Intent(this, CFActivity::class.java))
                     finish()
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.profile -> {
-                    startActivity(Intent(this, ProfileActivity::class.java))
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.home -> {
+                    startActivity(Intent(this, HomeActivity::class.java))
                     finish()
                     return@setOnNavigationItemSelectedListener true
                 }
             }
-            false // Return false if none of the conditions match
+            false
         }
-
-
-
-
-
-
 
 
     }

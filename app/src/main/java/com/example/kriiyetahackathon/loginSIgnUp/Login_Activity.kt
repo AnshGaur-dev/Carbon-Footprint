@@ -3,9 +3,9 @@ package com.example.kriiyetahackathon.loginSIgnUp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.Telephony.Sms.Intents
-import com.example.kriiyetahackathon.HomeActivity
-import com.example.kriiyetahackathon.R
+import android.widget.Toast
+import com.example.kriiyetahackathon.SignupActivity
+import com.example.kriiyetahackathon.appactivies.HomeActivity
 import com.example.kriiyetahackathon.databinding.ActivityLoginBinding
 
 class Login_Activity : AppCompatActivity() {
@@ -14,12 +14,22 @@ class Login_Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding=ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.loginbutton.setOnClickListener {
+            val email = binding.email.text.toString().trim()
+            val password = binding.password.text.toString().trim()
 
-        binding.loginbutton.setOnClickListener{
-            val intent = Intent(this,HomeActivity::class.java)
+            if (email.isNotEmpty() && password.isNotEmpty()) {
+                val intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
+                finish()
+            } else {
+                Toast.makeText(this, "Please enter both email and password", Toast.LENGTH_SHORT).show()
+                }
+        }
+        binding.signupbutton.setOnClickListener{
+            val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
             finish()
         }
-
     }
 }

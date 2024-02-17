@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationDrawer"
+        android:layout_width="250dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/curvershape_navigationdrawer"
+        android:elevation="5dp"
+        android:foregroundGravity="center"
+        app:itemIconTint="@drawable/item_selected_drawer"
+        app:menu="@menu/navigation_buttons" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/submainrelativelayout"
+        android:background="@drawable/cfbackgrounnd"
+        android:layout_above="@+id/navigationDrawer"
+        >
+        <SearchView
+            android:id="@+id/searchview"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/curvershape" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchview"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/searchresultlayout"
+            android:layout_width="165dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/searchview"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/searchresultxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:text="4.32"
+                android:textColor="#00008B"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:gravity="center|start"
+                android:text="CO2e"
+                android:textColor="#D3D3D3"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+            <TextView
+                android:id="@+id/Reducecarbontxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/searchresultlayout"
+                android:text="Reduce your carbon footprint"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:textSize="25dp"
+                />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Reducecarbontxt"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="20dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="hello"
+                    android:gravity="start"
+                    android:textSize="20dp"
+                    android:textStyle="italic|bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="21dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="hello"
+                    android:gravity="start"
+                    android:textSize="20dp"
+                    android:textStyle="italic|bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="21dp"
+                    />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Reducecarbontxt"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="20dp"
+                >
+                <ImageView
+                    android:padding="8dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/recyle"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="Recycle saves the energy it takes to produce materials by separating the materials in a container what you recycle."
+                    android:gravity="start"
+                    android:textSize="12dp"
+                    android:textStyle="italic|bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginStart="2dp"
+                    android:textColor="#808080"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="5dp"
+                >
+                <ImageView
+                    android:padding="8dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/reducewaste"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="Reducing waste reduces the burden of resource use on the planet ."
+                    android:gravity="start"
+                    android:layout_marginStart="2dp"
+                    android:textSize="13dp"
+                    android:textColor="#808080"
+                    android:textStyle="italic|bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="21dp"
+                    />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Reducecarbontxt"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="20dp"
+                >
+                <ImageView
+                    android:padding="8dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src= "@drawable/compose"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="Compost helps eliminate greenhouse gases and reduces the amount of pesticides in the ground."
+                    android:gravity="start"
+                    android:textSize="13dp"
+                    android:textStyle="italic|bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginStart="2dp"
+                    android:textColor="#808080"                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="5dp"
+                >
+                <ImageView
+                    android:padding="8dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/renewable"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="Renewable energy produces fewer greenhouse gases than fossil fuels."
+                    android:gravity="start"
+                    android:textSize="13dp"
+                    android:layout_marginStart="2dp"
+                    android:textColor="#808080"
+                    android:textStyle="italic|bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="21dp"
+                    />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            tools:ignore="NotSibling"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/youractactivitytxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your latest Activity"
+                android:textSize="20dp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/youtraveledtxt"
+                android:layout_below="@+id/youractactivitytxt"
+                android:text="You traveled 7 miles                                                                Today"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Install energy efficient devices                                       Yesterday"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
