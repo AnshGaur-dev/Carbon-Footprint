@@ -9,17 +9,28 @@
     >
 
 
+<<<<<<< HEAD
     <LinearLayout
+=======
+    <RelativeLayout
+>>>>>>> 42442b2b43f9c2036e7c0d4961f6b6d6c3a97ff9
         android:id="@+id/lllogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
+<<<<<<< HEAD
         android:padding="24dp"
         android:orientation="vertical"
         >
 
         <TextView
             android:id="@+id/Signuptxt"
+=======
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/textView"
+>>>>>>> 42442b2b43f9c2036e7c0d4961f6b6d6c3a97ff9
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -29,6 +40,7 @@
             android:textSize="40dp"
             android:textStyle="bold" />
 
+<<<<<<< HEAD
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -113,5 +125,14 @@
             android:text="Submit"
             android:textColor="@color/white" />
     </LinearLayout>
+=======
+
+    </RelativeLayout>
+
+
+
+
+
+>>>>>>> 42442b2b43f9c2036e7c0d4961f6b6d6c3a97ff9
 
 </RelativeLayout>

@@ -4,7 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+<<<<<<< HEAD
 import com.example.kriiyetahackathon.SignupActivity
+=======
+>>>>>>> 42442b2b43f9c2036e7c0d4961f6b6d6c3a97ff9
 import com.example.kriiyetahackathon.appactivies.HomeActivity
 import com.example.kriiyetahackathon.databinding.ActivityLoginBinding
 

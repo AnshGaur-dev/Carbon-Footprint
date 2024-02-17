@@ -5,8 +5,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:background="@color/white"
     >
+=======
+<<<<<<<< HEAD:app/src/main/res/layout/activity_goal.xml
+    android:layout_marginTop="8dp"
+    android:background="@color/white">
+========
+    android:background="@color/white"
+    >
+>>>>>>>> 42442b2b43f9c2036e7c0d4961f6b6d6c3a97ff9:app/src/main/res/layout/activity_cf.xml
+>>>>>>> 42442b2b43f9c2036e7c0d4961f6b6d6c3a97ff9
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigationDrawer"
@@ -21,6 +31,7 @@
         android:foregroundGravity="center"
         app:itemIconTint="@drawable/item_selected_drawer"
         app:menu="@menu/navigation_buttons" />
+<<<<<<< HEAD
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -289,5 +300,11 @@
                 android:textColor="@color/black" />
         </LinearLayout>
     </RelativeLayout>
+=======
+<<<<<<<< HEAD:app/src/main/res/layout/activity_goal.xml
+========
+
+>>>>>>>> 42442b2b43f9c2036e7c0d4961f6b6d6c3a97ff9:app/src/main/res/layout/activity_cf.xml
+>>>>>>> 42442b2b43f9c2036e7c0d4961f6b6d6c3a97ff9
 
 </RelativeLayout>

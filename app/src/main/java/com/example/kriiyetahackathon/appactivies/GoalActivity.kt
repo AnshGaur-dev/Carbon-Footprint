@@ -17,6 +17,7 @@ class GoalActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.explore -> {
                     startActivity(Intent(this, CFActivity::class.java))
+<<<<<<< HEAD
                     finish()
                     return@setOnNavigationItemSelectedListener true
                 }
@@ -28,6 +29,19 @@ class GoalActivity : AppCompatActivity() {
                     finish()
                     return@setOnNavigationItemSelectedListener true
                 }
+=======
+                    finish()
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.profile -> {
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.home -> {
+                    startActivity(Intent(this, HomeActivity::class.java))
+                    finish()
+                    return@setOnNavigationItemSelectedListener true
+                }
+>>>>>>> 42442b2b43f9c2036e7c0d4961f6b6d6c3a97ff9
             }
             false
         }
