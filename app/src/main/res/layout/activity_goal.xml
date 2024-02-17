@@ -6,21 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="8dp"
-    android:background="@color/white"
-    >
+    android:background="@color/white">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigationDrawer"
-        android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
-        android:elevation="5dp"
-        app:itemIconTint="@drawable/item_selected_drawer"
+        android:layout_width="250dp"
         android:layout_height="64dp"
-        android:background="@color/white"
-        android:layout_marginBottom="5dp"
-        android:foregroundGravity="center"
-        app:menu="@menu/navigation_buttons"
         android:layout_alignParentBottom="true"
-        />
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/curvershape_navigationdrawer"
+        android:elevation="5dp"
+        android:foregroundGravity="center"
+        app:itemIconTint="@drawable/item_selected_drawer"
+        app:menu="@menu/navigation_buttons" />
 
 </RelativeLayout>
